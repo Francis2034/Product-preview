@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+}
+.main-container {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 34.5rem;
+    border-radius: 9px;
+}
+.desktop-image {
+    display: block;
+    max-width: 100%;
+    border-radius: 9px;
+}
+.mobile-image {
+    display: none;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+}
+.product-info h5 {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color:hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: .9rem;
+}
+.product-info h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-top: 1rem;
+    width: 170px;
+    font-size: 1.7rem;
+    line-height: 1.6rem;
+}
+.product-info p {
+    color: hsl(228, 12%, 48%);
+    margin-top: 1.3rem;
+    font-size: .8rem;
+    font-weight: 500;
+    width: 220px;
+    line-height: 1.2rem;
+}
+.product-prices {
+    display: flex;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+.net-price {
+    font-family: 'Fraunces', serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+.previous-price {
+    font-size: .8rem;
+    margin-left: 1rem;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+#btn {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(158, 36%, 37%);
+    border: none;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#btn img {
+    margin-right: .7rem;
+}
+#btn:hover {
+    background: hsl(212, 21%, 14%);
+}
+@media (max-width: 580px) {
+    body {
+        padding: 1rem 1rem;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .desktop-image {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
+        max-width: 100%;
+        border-radius: 9px;
+    }
+}
